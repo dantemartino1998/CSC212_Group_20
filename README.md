@@ -14,3 +14,19 @@ Individual contributions must be clear within the ‘commits’ of the repo.
 ```
 
 
+Topic specific code instruction:
+```
+**Splay Tree**
+^^^
+
+**_Implement the Data Structure (using classes)_**
+
+- ensure at least `insert` & `search` methods are correct
+  - `search` must also return/print the count
+
+- generate a DOT file for visualization
+
+**_Store the words of an input text file_**
+
+- for the word ($node$) in the tree, a count with the number of repeats must also be stored
+```
