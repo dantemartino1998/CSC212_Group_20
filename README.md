@@ -10,6 +10,11 @@ Your code from start to finish will live on GitHub.
 
 Each group member must be connect via their own github account to a primary account which will be used for submission.
 
+Current Workload Split (with intersection)
+Code: Nathan, Dante
+Report: Logan
+Presentation: Aidan
+
 Individual contributions must be clear within the ‘commits’ of the repo.
 ```
 Code Deadline: October 4th
