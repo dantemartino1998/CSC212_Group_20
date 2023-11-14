@@ -12,6 +12,11 @@ Each group member must be connect via their own github account to a primary acco
 
 Individual contributions must be clear within the ‘commits’ of the repo.
 ```
+Code Deadline: October 4th
+
+Presentation: October 7th, 11:30.
+
+![image](https://github.com/dantemartino1998/CSC212_Group_20/assets/78177213/894399a5-22a2-4586-a4b8-ade605cda3c2)
 
 
 Topic specific code instruction:
