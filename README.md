@@ -1,4 +1,4 @@
-# CSC212_Group_20
+# CSC212_Group_20 Term Project: Splay Trees
 The repository for Group 20 CSC212 group project. Not really sure how the Repo should be configured, but at least it is created.
 
 If needed, here is the link to the Project Assignment page:
