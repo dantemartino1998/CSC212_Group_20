@@ -2,7 +2,7 @@ these files I created as a way to visualize Splay Trees. Not entirely sure if th
 
 the "test" file is the compiled code from "practice.cpp" It can be used as such:
 
-./test <values in splay tree>
+./test "values in splay tree"
 
 for example:
 ./test 2 4 6 8 9 12
