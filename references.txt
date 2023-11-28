@@ -1,0 +1,4 @@
+https://www.geeksforgeeks.org/introduction-to-splay-tree-data-structure/
+
+https://www.javatpoint.com/splay-tree
+
