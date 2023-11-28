@@ -1,4 +1,8 @@
+Reference Page
+
+Geeks4Geeks General Explanation
 https://www.geeksforgeeks.org/introduction-to-splay-tree-data-structure/
 
+Zig/Zag Explanations
 https://www.javatpoint.com/splay-tree
-
+http://www.btechsmartclass.com/data_structures/splay-trees.html
