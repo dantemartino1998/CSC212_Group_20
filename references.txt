@@ -8,3 +8,5 @@ https://www.javatpoint.com/splay-tree
 http://www.btechsmartclass.com/data_structures/splay-trees.html
 
 Graphiz Online Visualizer link. https://dreampuf.github.io/GraphvizOnline/
+
+Video introduction of Splay Trees: https://www.youtube.com/watch?v=qMmqOHr75b8
