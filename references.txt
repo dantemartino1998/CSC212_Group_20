@@ -3,6 +3,9 @@ Reference Page
 Geeks4Geeks General Explanation
 https://www.geeksforgeeks.org/introduction-to-splay-tree-data-structure/
 
+Splay Tree Visualizer:
+https://www.cs.usfca.edu/~galles/visualization/SplayTree.html
+
 Zig/Zag Explanations
 https://www.javatpoint.com/splay-tree
 http://www.btechsmartclass.com/data_structures/splay-trees.html
