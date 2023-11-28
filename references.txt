@@ -6,3 +6,5 @@ https://www.geeksforgeeks.org/introduction-to-splay-tree-data-structure/
 Zig/Zag Explanations
 https://www.javatpoint.com/splay-tree
 http://www.btechsmartclass.com/data_structures/splay-trees.html
+
+Graphiz Online Visualizer link. https://dreampuf.github.io/GraphvizOnline/
