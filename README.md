@@ -40,3 +40,11 @@ Topic specific code instruction:
 
 - for the word ($node$) in the tree, a count with the number of repeats must also be stored
 ```
+
+Ideas for extra functions/code/TODO:
+
+```
+*allow the user to make multiple inputs/ searches in one line, eg input:(dog cat fish)
+  ALTERNATIVELY: forbid multiple multiple inputs w/ error cast
+*in ZIG/ZAG, use proper vars
+```
