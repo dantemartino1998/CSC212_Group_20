@@ -2,11 +2,17 @@
 
 //SplayNode classes
 SplayNode::SplayNode(std::string word) {
-   
+   this->word = word;
+   this->left = nullptr;
+   this->right = nullptr;
+   count = 1;
 }
 
 SplayNode::SplayNode(){ 
-
+   this->word = nullptr;
+   this->left = nullptr;
+   this->right = nullptr;
+   count = 0;
 }
 
 SplayNode::~SplayNode(){
