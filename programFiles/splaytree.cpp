@@ -20,7 +20,10 @@ SplayNode::~SplayNode(){
 }
 
 SplayNode* SplayTree::zig(SplayNode* x) { //helper method for the zig rotation
-   
+   SplayNode* y = x->left;
+   x->left = y->right;
+   y->right = x;
+   return y;
 }
 
 SplayNode* SplayTree::zag(SplayNode* x) { //helper method for the zag rotation
