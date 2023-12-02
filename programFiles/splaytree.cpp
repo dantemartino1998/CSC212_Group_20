@@ -35,8 +35,18 @@ SplayNode* SplayTree::splay(SplayNode* root, const std::string& target) { //reor
 }
 
 
-SplayNode* SplayTree::insert(SplayNode* root, const std::string& newWord) { //inserts like normal BST2
-   
+SplayNode* SplayTree::insert(SplayNode* root, const std::string& newWord) { //inserts like normal BST
+     if(!root){
+        return new SplayNode(newWord);
+    }
+    // if word is smaller, left
+    if(newWord < root->word){
+        root->left = insert(root->left,newWord);
+        //otherwise right
+    }else{
+        root->right = insert(root->right,newWord);
+    }
+    return root;
 }
 
 void SplayTree::printTree(SplayNode* node, std::ostream& out) { //prints tree for DOT file
