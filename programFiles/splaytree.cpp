@@ -141,7 +141,7 @@ void SplayTree::insert(const std::string& newWord) {//public method for insertin
 }
 
 std::pair<bool, int> SplayTree::search(const std::string& target) {//method for searching for word in tree
-        root = 0; //splay()
+        root = splay(root, target);//splays the tree to bring potential target or closet ancestor to the root
 
     if (root->word == target) {//checks if the root word matches target
         return {true, root->count};//if word is found, return true and count of found word
