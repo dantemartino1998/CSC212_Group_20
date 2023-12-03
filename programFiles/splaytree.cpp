@@ -20,14 +20,17 @@ SplayNode::~SplayNode(){
 }
 
 SplayNode* SplayTree::zig(SplayNode* x) { //helper method for the zig rotation
-   SplayNode* y = x->left;
-   x->left = y->right;
-   y->right = x;
-   return y;
+   SplayNode* y = x->left; //store left child of x in y
+   x->left = y->right; //make right child of y the left child of x
+   y->right = x; //make x the right child of y
+   return y; //return new root, which is y
 }
 
 SplayNode* SplayTree::zag(SplayNode* x) { //helper method for the zag rotation
-  
+    SplayNode* y = x->right; //store right child of x in y
+    x->right = y->left; //make the left child of y the right child of x
+    y->left = x; //make x the left child of y
+    return y; //return new root, which is y
 }
 
 SplayNode* SplayTree::splay(SplayNode* root, const std::string& target) { //reorganizes tree to set new node to root/use zig/zags
