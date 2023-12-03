@@ -127,12 +127,12 @@ void SplayTree::printTree(SplayNode* node, std::ostream& out) { //prints tree fo
     }
 }
 
-//SplayTree classes
+//SplayTree constructor
 SplayTree::SplayTree() {
-
+    root = nullptr;
 }
 SplayTree::~SplayTree() {
-
+//left blank
 }
 
 void SplayTree::insert(const std::string& newWord) {//public method for inserting word into tree
