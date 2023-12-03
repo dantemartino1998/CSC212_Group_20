@@ -131,7 +131,8 @@ SplayTree::~SplayTree() {
 }
 
 void SplayTree::insert(const std::string& newWord) {//public method for inserting word into tree
-  
+    root = insert(root, newWord);//calls private insert method, passes current root and word to be inserted
+    root = splay(root, newWord);
 }
 
 std::pair<bool, int> SplayTree::search(const std::string& target) {//method for searching for word in tree
