@@ -104,7 +104,22 @@ SplayNode* SplayTree::insert(SplayNode* root, const std::string& newWord) { //in
 }
 
 void SplayTree::printTree(SplayNode* node, std::ostream& out) { //prints tree for DOT file
-  
+  //if the current node is not null (i.e., the tree is not empty),
+    if (node) {
+        //if there is a left child, print an edge from the current node to its left child with a label "L".
+        if (node->left) {
+            out << "\"" << node->word << "\" -> \"" << node->left->word << "\" [label=\"L\"]" << std::endl;
+        }
+        //if there is a right child, print an edge from the current node to its right child with a label "R".
+        if (node->right) {
+            out << "\"" << node->word << "\" -> \"" << node->right->word << "\" [label=\"R\"]" << std::endl;
+        }
+        //print the information of the current node, including its word, count, and a label for visualization.
+        out << "\"" << node->word << "\" [label=\"" << node->word << "\\nCount: " << node->count << "\"]" << std::endl;
+        //recursively call printTree on the left and right subtrees to print their nodes and edges.
+        printTree(node->left, out);
+        printTree(node->right, out);
+    }
 }
 
 //SplayTree classes
