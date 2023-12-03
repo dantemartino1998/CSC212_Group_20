@@ -34,7 +34,10 @@ SplayNode* SplayTree::zag(SplayNode* x) { //helper method for the zag rotation
 }
 
 SplayNode* SplayTree::splay(SplayNode* root, const std::string& target) { //reorganizes tree to set new node to root/use zig/zags
-   
+   //if the current root is null or matches the searched word, no splaying/rotations needed, current root returned.
+    if (!root || root->word == target) {
+        return root;
+    }
 }
 
 
