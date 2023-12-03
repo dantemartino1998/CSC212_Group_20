@@ -72,7 +72,13 @@ void SplayTree::insert(const std::string& newWord) {//public method for insertin
 }
 
 std::pair<bool, int> SplayTree::search(const std::string& target) {//method for searching for word in tree
-    
+        root = 0; //splay()
+
+    if (root->word == target) {//checks if the root word matches target
+        return {true, root->count};//if word is found, return true and count of found word
+    } else {
+        return {false, 0};//word not found, return false and count of 0
+    }
 }
 
 void SplayTree::generateDotFile(const std::string& filename) { //makes dot file for display
