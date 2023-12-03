@@ -38,6 +38,54 @@ SplayNode* SplayTree::splay(SplayNode* root, const std::string& target) { //reor
     if (!root || root->word == target) {
         return root;
     }
+   if (target < root->word) {
+        //if target is less than the current root's word, it means the target may be in the left subtree.
+        //if there is no left child, no further splaying needed, and the current root is returned.
+        if (!root->left) {
+            return root;
+        }
+
+        if (target < root->left->word) {
+            //if target is less than the current root, and there is a left child, further checks are performed on the left child.
+            //if target is less than the left child's word, a recursive splay operation is performed on the left-left subtree,
+            //applying a zig rotation.
+            root->left->left = splay(root->left->left, target);
+            root = zig(root);
+        } else if (target > root->left->word) {
+            //if target is greater than the left child's word, a recursive splay operation is performed on
+            //the left-right subtree, and a zig rotation is applied if needed.
+            root->left->right = splay(root->left->right, target);
+            if (root->left->right) {
+                root->left = zag(root->left);
+            }
+        }
+
+        //a zig rotation is applied to the root if the left child is not null; otherwise, the current root is returned.
+        return (root->left) ? zig(root) : root;
+    } else {
+        //if the target is greater than the current root's word, and there is a right child,
+        //similar checks and operations are performed for the right subtree.
+        if (!root->right) {
+            return root;
+        }
+
+        if (target < root->right->word) {
+            //if target is less than the right child's word, a recursive splay operation is performed on the right-left subtree,
+            //and a zig rotation is applied if needed.
+            root->right->left = splay(root->right->left, target);
+            if (root->right->left) {
+                root->right = zig(root->right);
+            }
+        } else if (target > root->right->word) {
+            //if target is greater than the right child's word, a recursive splay operation is performed on the right-right subtree,
+            //and a zag rotation is applied.
+            root->right->right = splay(root->right->right, target);
+            root = zag(root);
+        }
+
+        //finally, a zag rotation is applied to the root if the right child is not null; otherwise, the current root is returned.
+        return (root->right) ? zag(root) : root;
+    }
 }
 
 
