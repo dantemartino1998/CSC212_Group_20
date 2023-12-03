@@ -93,6 +93,11 @@ SplayNode* SplayTree::insert(SplayNode* root, const std::string& newWord) { //in
      if(!root){
         return new SplayNode(newWord);
     }
+    if (newWord == root->word) //if duplicate found, don't insert (wouldn't splay properly, extra couldnt be root)
+    {
+        root->count++; //augment count
+        return root;
+    }
     // if word is smaller, left
     if(newWord < root->word){
         root->left = insert(root->left,newWord);
