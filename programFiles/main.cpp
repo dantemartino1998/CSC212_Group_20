@@ -3,7 +3,7 @@
 #include <fstream>
 #include <sstream>
 
-int main(int argc, char* argv[]) {
+int main(int argc, char* argv[]) { //handles command line argument. requires input file to run
     if (argc != 2) {
         std::cerr << "Usage: " << argv[0] << " <input_file>" << std::endl; //if no input file is provided
         return 1;
@@ -23,5 +23,9 @@ int main(int argc, char* argv[]) {
         std::cerr << "Error: Unable to open input file." << std::endl; //error handling
         return 1;
     }
+
+    //menu for user to pick operation goes here. this loop continues until user inputs option 3.
+
+
     
 }
