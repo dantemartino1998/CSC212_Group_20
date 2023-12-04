@@ -151,7 +151,28 @@ std::pair<bool, int> SplayTree::search(const std::string& target) {//method for 
 }
 
 void SplayTree::generateDotFile(const std::string& filename) { //makes dot file for display
-   
+   std::ofstream dotFile(filename);
+
+//checks if the file was opened succesfully
+if (dotFile.is_open()) {
+
+    //write initial line for DOT format indicating it is a directed graph names SplayTree
+    dotFile << "digraph SplayTree {" << std::endl;
+
+    //call the printTree function to recursively print the nodes and edges of the Splay Tree
+    printTree(root, dotFile);
+
+    //writes closing bracked to end the DOT file
+    dotFile << "}" << std::endl;
+
+    //close DOT file
+    dotFile.close();
+
+    //prints if file was generated or failed
+    std::cout << "DOT file generated: " << filename << std::endl;
+} else {
+    std::cerr << "Error: Unable to open DOT file for writing." << std::endl;
+}
 }
 
 
