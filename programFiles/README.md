@@ -1,6 +1,6 @@
 Here are all files for the Splay Tree program
 
- 
+The program only takes one input, which is the name of the test file (eg: test.txt) and produces a .dot file.
 Program was compiled using the following command:
 
  ```
