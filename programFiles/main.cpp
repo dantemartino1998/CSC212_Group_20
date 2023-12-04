@@ -68,6 +68,7 @@ int main(int argc, char* argv[]) { //handles command line argument. requires inp
             break;
         } else {//error handling for invalid choice.
             std::cout << "Invalid choice. Please enter a valid option." << std::endl;
+            break; 
         }
 
         //generate DOT file for visualization after each operation
