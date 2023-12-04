@@ -2,9 +2,10 @@ Here are all files for the Splay Tree program
 
  
 Program was compiled using the following command:
- 
-g++ -std=c++11 -Wall -g main.cpp splaytree.cpp -o test
 
+ ```
+g++ -std=c++11 -Wall -g main.cpp splaytree.cpp -o test
+```
 
 To use the program, a input file is required. This input file should have all words to be added to the tree.
 
