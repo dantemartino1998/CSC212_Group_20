@@ -24,6 +24,7 @@ int main(int argc, char* argv[]) { //handles command line argument. requires inp
         return 1;
     }
 
+    splayTree.generateDotFile("splay_tree.dot"); //once all inputs are read in, generates a base tree immediately
     //menu for user to pick operation goes here. this loop continues until user inputs option 3.
     while (true) {
         std::cout << "Choose an operation:" << std::endl;
